@@ -1,0 +1,84 @@
+<html lang = "en">
+    <head>
+        <style>
+            body{
+                font-family:Georgia, 'Times New Roman', monospace, serif;
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            label{
+                font-size: large;
+                display: block;
+                padding-bottom: 10px;
+            }
+            form{
+                background-color: lightsalmon;
+                padding: 60px 60px 60px 60px;
+            }
+            input,textarea,select{
+                display: block;
+                width: 100%;
+               text-align: center;
+            }
+            .center{
+                text-align: center;
+            }
+            #submit {
+            background-color: brown;
+
+            }
+            a,b{
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <h1 id ="title" class="center"><em> Most favorite Anime</em>  </h1>
+    <p id ="description" class="center">  This is a survey in search of the Best anime series in 2021</p>
+    <form id ="survey-form">
+        
+        
+      <label id ="name-label">Name :</label>
+
+     <input type="text"   name="name"   id="name" required placeholder="first name"><br>
+        
+        
+      <label id="email-label">Email : </label>
+      <input type="email"  name="email"  id ="email"required placeholder="email"><br>
+        
+        
+     <label id="number-label"> Number :</label> 
+      <input type="number" name="number" id="number" min="0" max="9" required placeholder="num"><br>
+        <br>
+        <label id="choose-label">select ur fav anime:</label><br>
+        
+         <select name="anime" id ="dropdown">
+         <option value="myheroacademia">My Hero Academia</option>
+         <option value="onepiece">One piece</option>
+         <option value="blackclover">Black clover</option>
+         <option value="aot">Attack of Titans</option>
+     </select>
+     <br>
+     <br>
+     <label id="genre-label">Genre:</label><br>
+     <input type="radio"  name ="anime" value="mystery">Mystery<br>
+     <input type="radio"  name="anime" value="sports">Sports<br>
+     <input type="radio" name="anime" value="romance">Romance<br>
+     <input type="radio" name="anime" value="others">Others<br>
+     <br>
+     <br>
+     <label id="check-label">the anime has:</label><br>
+     <input type="checkbox" name="anime1" value="comedy" checked>Comedy<br>
+     <input type="checkbox" name="anime1" value="adventure">Adventure<br>
+     <input type="checkbox" name="anime1" value="freindship">Friendship<br>
+     <input type="checkbox" name="anime1" value="all">All<br>
+     <br>
+     <br>
+
+     <label id="txt-label">feedback about the survey</label><br>
+     <textarea placeholder="feedback " id ="area"></textarea>
+         <br>
+     <br>
+    <input type="submit" id ="submit" class="center">
+    </form>
+</html>
